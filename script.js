@@ -36,7 +36,7 @@ numberButtons.forEach(button => {
 
         else if(button.innerText !== '.' || !current.split('').includes('.')){
             current += button.innerText
-            currentOperandTextElement.innerText = current;
+            currentOperandTextElement.innerText = current
             equals = 0
         }
     })
@@ -65,7 +65,7 @@ operationButtons.forEach(button => {
         // if user didn't press equals button calculate on click of operations button
 
         if(previous !== '' && current !== '' && equals === 0){
-            calculate();
+            calculate()
             equals = 0
             current = ''
         }
@@ -161,7 +161,7 @@ equalsButton.addEventListener('click', () => {
         equals = 1   
     }
     calculate()
-});
+})
 
 
 // not yet added
